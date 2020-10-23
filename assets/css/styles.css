@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.fa{
+    color: #fff;
+}
+
+a:hover 
+{
+     color:#fff !important; 
+     text-decoration:none !important; 
+     cursor:pointer !important;  
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em !important;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: #fff;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+}
+.bgvideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+}
+
+.webpage{
+    width: 100%;
+    height: 100%;
+    background-color: #222222d8;
+    background-image: url('../img/bg.png');
+    background-size: 25% auto;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.navbar{
+    position: relative;
+    width: 100%;
+    height: 15%;
+    /* background-color: #212327; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.logoimg{
+    width: 10em;
+    height: auto;
+}
+
+.landingpage{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.comingsoonTxt{
+    font-size: 7em;
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+}
+.staytunedTxt{
+    font-size: 2em;
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+}
+
+.navitems{
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Staatliches', cursive;
+    width: 10em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainlogo{
+    width: 30%;
+    height: auto;
+}
+
+.footer{
+    width: 100%;
+    height: 5%;
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-ac{
+        position: absolute;
+        width: 15%;
+        height: 25%;
+        /* background-color: #222; */
+        z-index: 999;
+        top: 12.5%;
+        right: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        transform: translateX(150%);
+        transition: 0.5s;
+}
+
+#drop-btn{
+    transition: 0.5s;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        flex-wrap: nowrap !important; 
+        justify-content: space-around !important;
+        padding-left: 0 !important; 
+        padding-right: 0 !important;
+    }
+    .logoimg{
+        width: 7em;
+    }
+    .navitems{
+        width: 9em;
+        font-size: 1.2em;
+    }
+    .webpage{
+        background-size: 50% auto;
+    }
+    .dropdown-ac{
+        width: 30%;
+        height: 5%;
+        z-index: 999;
+        top: 10%;
+        right: 5%;
+}
+  .fa-4x{
+      font-size: 2em !important;
+  }
+  }

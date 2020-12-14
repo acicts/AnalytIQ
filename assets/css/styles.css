@@ -1,4 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    /* text-align: center; */
+}
+
+.card{
+ margin: 5% 7.5% 5% 7.5%;
+    width: 85%;
+    background-color: #161819 !important;
+    color: #fff;
+}
+
+.table{
+    margin: 5% 7.5% 5% 7.5%;
+    width: 85% !important;
+    background-color: #161819 !important;
+}
+tbody, td, tfoot, tr {
+    background-color: #161819 !important;
+    font-size: 0.9em !important;
+}
+ tr:hover > td{
+    background-color: #fff !important;
+}
+
+th{
+    /* font-size: 1em !important; */
+    background-color: #161819 !important;
+}
+
+.thhead{
+    background-color: #bb4125 !important;
+}
+
+.ls-btn{
+    margin-top: 1% !important;
+    border: none !important;
+    outline: none;
+    background-color: #bb4125 !important;
+}
+.ls-btn:focus{
+    margin-top: 1% !important;
+    border: none !important;
+    outline: none !important;
+    outline-offset: 0 !important;
+    /* background-color: #bb4125 !important; */
+}
+.vw-btn{
+    margin-top: 1% !important;
+    border: none !important;
+    outline: none;
+    /* background-color: #bb4125 !important; */
+}
+.vw-btn:focus{
+    margin-top: 1% !important;
+    border: none !important;
+    outline: none !important;
+    outline-offset: 0 !important;
+    /* background-color: #bb4125 !important; */
+}
+
+.sm{
+    margin-bottom: 0;
+    font-size: 0.9em;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #161819;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #bb4125;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d14728;
+  }
+
+.card-header{
+    background-color: #bb4125 !important;
+    font-weight: 600;
+    border: none !important;
+}
+
+.list-group-item{
+    background-color: transparent !important;
+}
+.intro-heading {
+    padding-top: 5%;
+    font-size: 5em;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+.intro-sub {
+    font-size: 1em;
+    text-align: center;
+    color: white;
+}
+
+.info i.fa-square {
+    color: #bb4125;
+}
 
 a {
     color: #fff !important;
@@ -9,11 +123,21 @@ a {
     color: #fff;
 }
 
+.service-heading{
+    color: #fff;
+}
+
 a:hover 
 {
      color:#fff !important; 
      text-decoration:none !important; 
      cursor:pointer !important;  
+}
+
+.title{
+    color: #fff;
+    font-family: 'Staatliches';
+    text-align: center;
 }
 
 .material-icons {
@@ -68,11 +192,25 @@ html,body{
     background-repeat: repeat;
 }
 
+.archive-webpage{
+    background-color: #222222;
+}
+
+.main-header {
+    width: 100% !important;
+    background-size: 100% auto;
+    background-position: 20% center;
+    background-image: url(../img/header-bg2.jpg);
+    height: 50%;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+
 .navbar{
     position: relative;
     width: 100%;
     height: 15%;
-    /* background-color: #212327; */
+    /* background-color: #16181980; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -82,6 +220,11 @@ html,body{
     padding-right: 4%;
 }
 
+.nvbr-archive{
+    background-color: #16181980;
+    border-bottom: 3px solid #bb4125;
+}
+
 .logoimg{
     width: 10em;
     height: auto;
@@ -89,7 +232,7 @@ html,body{
 
 .landingpage{
     width: 100%;
-    height: 80%;
+    height: 85%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,7 +256,7 @@ html,body{
     color: white;
     font-size: 1.5em;
     font-family: 'Staatliches', cursive;
-    width: 10em;
+    width: 15em;
     display: flex;
     justify-content: space-between;
 }
@@ -133,6 +276,16 @@ html,body{
     width: 100%;
     height: 5%;
     color: #fff;
+    font-family: 'Staatliches', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-archive{
+    width: 100%;
+    height: 5%;
+    color: #fff;
+    border-top: 3px solid #bb4125;
     font-family: 'Staatliches', cursive;
     display: flex;
     align-items: center;
@@ -163,6 +316,118 @@ html,body{
     height: 100%;
     overflow: hidden;
 }
+.wrapper-overflow{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: scroll;
+}
+
+.podium{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    margin-bottom: 2.5%;
+    flex-direction: row;
+}
+
+
+
+.podium-card{
+    width: 30%;
+    height: auto;
+    margin: 0 5% 0 5%;
+    background-color: #161819;
+    border-bottom: 3px solid #bb4125;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.podium-small{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+}
+
+.podium-card-small{
+    width: 15%;
+    height: auto;
+    margin: 0 2.5% 0 2.5%;
+    background-color: #161819;
+    border-bottom: 3px solid #bb4125;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.podium-card:hover,.podium-card-small:hover{
+    background-color: #212327;
+}
+
+.podium-logo{
+    width: auto;
+    height: 60%;
+}
+
+.podium-title{
+ color: #fff;
+ font-family: 'Staatliches', cursive;
+ font-size: 1em;
+}
+.podium-text{
+ color: #fff;
+ font-family: 'Staatliches', cursive;
+ font-size: 1.5em;
+}
+.podium-captain{
+ color: #fff;
+ font-family: 'Staatliches', cursive;
+ font-size: 0.9em;
+}
+
+.wrapper-overflow::-webkit-scrollbar-track {
+    background: #161819;
+  }
+  
+  /* Handle */
+  .wrapper-overflow::-webkit-scrollbar-thumb {
+    background: #bb4125;
+  }
+
+
+.podium-logo-small{
+    width: auto;
+    height: 50%;
+}
+
+.podium-title-small{
+ color: #fff;
+ font-family: 'Staatliches', cursive;
+ font-size: 0.9em;
+}
+.podium-text-small{
+ color: #fff;
+ font-family: 'Staatliches', cursive;
+ font-size: 1.2em;
+}
+.podium-captain-small{
+ color: #fff;
+ font-family: 'Staatliches', cursive;
+ font-size: 0.8em;
+}
+.smallscreen{
+    display: none;
+}
+.bigscreen{
+    display: flex;
+}
+
 
 @media only screen and (max-width: 600px) {
     .navbar{
@@ -172,10 +437,10 @@ html,body{
         padding-right: 0 !important;
     }
     .logoimg{
-        width: 7em;
+        width: 3em;
     }
     .navitems{
-        width: 9em;
+        width: 12em;
         font-size: 1.2em;
     }
     .webpage{
@@ -191,4 +456,101 @@ html,body{
   .fa-4x{
       font-size: 2em !important;
   }
+  .comingsoonTxt{
+      line-height:1;
+  }
+  .podium{
+      flex-direction: column;
+      height: 120%;
+      align-items: center;
+  }
+  .podium-small{
+      flex-direction: column;
+      height: 150%;
+      margin-top: 5%;
+      align-items: center;
+  }
+
+  .podium-card{
+      width: 75%;
+      height: 30%;
+      margin: 5% 0 5% 0;
+  }
+  .podium-card-small{
+      width: 75%;
+      height: 20%;
+      margin: 2.5% 0 2.5% 0;
+  }
+  .wrapper-overflow{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.podium-title{
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+    font-size: 0.9em;
+   }
+   .podium-text{
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.2em;
+   }
+   .podium-captain{
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+    font-size: 0.75em;
+   }
+   .podium-title-small{
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+    font-size: 0.8em;
+   }
+   .podium-text-small{
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.1em;
+   }
+   .podium-captain-small{
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+    font-size: 0.75em;
+   }
+   .smallscreen{
+    display: flex;
+}
+.bigscreen{
+    display: none;
+}
+
+.main-header {
+    width: 100% !important;
+    background-size: auto 100%;
+    background-position: 20% center;
+    background-image: url(../img/header-bg2.jpg);
+    height: 50%;
+    overflow: hidden;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-heading{
+    font-size: 3em;
+}
+
+.table{
+    margin: 5% 10% 5% 10%;
+    width: 80% !important;
+    background-color: #161819 !important;
+}
+tbody, td, tfoot, tr {
+    background-color: #161819 !important;
+    font-size: 0.85em !important;
+}
+
   }
